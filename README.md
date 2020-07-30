@@ -21,7 +21,7 @@ public static string Format(string format, object tokenValues, TokenOptions opti
 public static string Format(string format, object tokenValues, IFormatProvider? formatProvider, TokenOptions options = default);
 ```
 
-Format strings contain token declarations inside curly braces. The simplest form of this just contains a token key, i.e. `{TokenKey}`. Token keys map are used as string keys if `tokenValues` is an `IDictionary` otherwise they map to property names on other object types.
+Format strings contain token declarations inside curly braces. The simplest form of this just contains a token key, i.e. `{TokenKey}`. Token keys are used as string keys if `tokenValues` is an `IDictionary` otherwise they map to property names on other object types.
 
 Tokens can contain subkeys seperated by dots (`.`) which will grab nested values, e.g. `{User.FirstName.Length}`. Tokens can also contain an optional format string following a colon (`:`), e.g. `{Transaction.Amount:C2}`.
 
