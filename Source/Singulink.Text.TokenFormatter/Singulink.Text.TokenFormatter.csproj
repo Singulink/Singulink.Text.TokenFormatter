@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Singulink.Text</RootNamespace>
+    <Description>A simple yet versatile .NET tokenized string formatting library written in C# to replace string.Format.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>String Formatting Formatter Token</PackageTags>
+    <PackageProjectUrl>https://github.com/Singulink/Singulink.Text.TokenFormatter</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mike Marynowski</Authors>
+    <Company>Singulink</Company>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Copyright>Copyright (c) 2020 Singulink</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+  </ItemGroup>
+
+</Project>
