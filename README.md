@@ -30,7 +30,7 @@ Finally, any key or subkey can have a question mark (`?`) appended to it to indi
 Curly braces are escaped by doubling them up, so `"{{"` and `"}}"` are formatted as `"{"` and `"}"`, respectively. The inside of a token declaration cannot contain any curly braces anywhere. Additionally, token keys cannot contain question marks (`?`) or colons (`:`) as they are interpreted as nullability indicators and token format delimiters, respectively.
 
 `TokenOptions` has three available values:
-- `None` - the default value with no options set
+- `None` - the default value with no options set.
 - `NonPublicAccess` - Indicates non-public properties can be accessed from tokens.
 - `AllowMissingKeys` - Indicates that nullable keys that don't exist should be treated like `null` instead of throwing a `KeyNotFoundException` exception.
 
