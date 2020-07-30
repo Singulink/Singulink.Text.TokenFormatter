@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singulink.Text.TokenFormatter", "Singulink.Text.TokenFormatter\Singulink.Text.TokenFormatter.csproj", "{70203C34-B081-4FF8-A373-1D29475F3411}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F4AFF43C-DD97-4367-9CF5-FE056DEAB949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CDCB9AB-5FE7-4AC3-8956-C9EC7395E9CB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singulink.Text.TokenFormatter.Tests", "Singulink.Text.TokenFormatter.Tests\Singulink.Text.TokenFormatter.Tests.csproj", "{F380CE51-5DB0-4212-90CE-B0B101FA35F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Debug|x64.Build.0 = Debug|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Debug|x86.Build.0 = Debug|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Release|x64.ActiveCfg = Release|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Release|x64.Build.0 = Release|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Release|x86.ActiveCfg = Release|Any CPU
+		{70203C34-B081-4FF8-A373-1D29475F3411}.Release|x86.Build.0 = Release|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Debug|x64.Build.0 = Debug|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Debug|x86.Build.0 = Debug|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Release|x64.ActiveCfg = Release|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Release|x64.Build.0 = Release|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Release|x86.ActiveCfg = Release|Any CPU
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F380CE51-5DB0-4212-90CE-B0B101FA35F1} = {F4AFF43C-DD97-4367-9CF5-FE056DEAB949}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5414D673-0B07-498C-955D-A8B5EB65D77F}
+	EndGlobalSection
+EndGlobal
