@@ -27,7 +27,7 @@ Tokens can contain subkeys seperated by dots (`.`) which will grab nested values
 
 Finally, any key or subkey can have a question mark (`?`) appended to it to indicate that the value may be null, e.g. `{User.MiddleName?.Length}`. If you do not indicate that a token value can be null then a `NullReferenceException` is thrown when a null value is encountered. Null values are simply replaced with an empty string by default, but you can specify a replacement string when the value is null by putting it after the question mark, like so: `{User?[unknown user].MiddleName?*no middle name*.Length}`. This example would output the string `"[unknown user]"` if the `User` key returns a null value or `"*no middle name*"` if the `MiddleName` subkey returns a null value.
 
-Curly braces are escaped by doubling them up, so `"{{"` and `"}}"` are formatted as `"{"` and `"}"`, respectively. The inside of a token declaration cannot contain any curly braces anywhere. Additionally, token keys cannot contain question marks (`?`) or colons (`:`) as they are interpreted as nullability operators and token format delimiters, respectively.
+Curly braces are escaped by doubling them up, so `"{{"` and `"}}"` are formatted as `"{"` and `"}"`, respectively. The inside of a token declaration cannot contain any curly braces anywhere. Additionally, token keys cannot contain question marks (`?`) or colons (`:`) as they are interpreted as nullability indicators and token format delimiters, respectively.
 
 `TokenOptions` has three available values:
 - `None` - the default value with no options set
