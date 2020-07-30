@@ -14,7 +14,7 @@ Simply install the `Singulink.Text.TokenFormatter` package from NuGet into your 
 
 # Usage
 
-The only two types you need to worry about are `TokenFormatter` and `TokenOptions`. `TokenFormatter` has the following two static methods that do it all:
+The only two types exposed by the package are `TokenFormatter` and `TokenOptions`. `TokenFormatter` has the following two static methods that do it all:
 
 ```c#
 public static string Format(string format, object tokenValues, TokenOptions options = default);
