@@ -58,6 +58,6 @@ var info = new Dictionary<string, object> {
 // "Mike (age 35) lives at 123 Easy Street, London, ON"
 TokenFormatter.Format("{Name} (age {Age}) lives at {Address.Street}, {Address.City}, {Address.State}", info);
 
-// "{Mike has an income of $99,999.99 and drives ?}"
-TokenFormatter.Format("{{{Name} has an income of {Income:C2} and drives {Car??}}}", info, TokenOptions.AllowMissingKeys);
+// "{Mike has an income of $99,999.99 and drives (?)}"
+TokenFormatter.Format("{{{Name} has an income of {Income:C2} and drives {Car?(?)}}}", info, TokenOptions.AllowMissingKeys);
 ```
