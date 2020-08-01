@@ -17,8 +17,8 @@ Simply install the `Singulink.Text.TokenFormatter` package from NuGet into your 
 The only two types exposed by the package are `TokenFormatter` and `TokenOptions`. `TokenFormatter` has the following two static methods that do it all:
 
 ```c#
-public static string Format(string format, object tokenValues, TokenOptions options = default);
-public static string Format(string format, object tokenValues, IFormatProvider? formatProvider, TokenOptions options = default);
+string Format(string format, object tokenValues, TokenOptions options = default);
+string Format(string format, object tokenValues, IFormatProvider? formatProvider, TokenOptions options = default);
 ```
 
 Format strings contain token declarations inside curly braces. The simplest form of this just contains a token key, i.e. `{TokenKey}`. Token keys are used as string keys if `tokenValues` is an `IDictionary` otherwise they map to property names on other object types.
