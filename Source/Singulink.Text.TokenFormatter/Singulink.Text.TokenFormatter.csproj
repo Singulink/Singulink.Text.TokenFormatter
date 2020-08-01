@@ -12,6 +12,7 @@
     <Company>Singulink</Company>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Copyright>Copyright (c) 2020 Singulink</Copyright>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

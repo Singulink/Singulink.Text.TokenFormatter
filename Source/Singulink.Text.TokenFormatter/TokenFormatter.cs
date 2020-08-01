@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
@@ -27,6 +28,23 @@ namespace Singulink.Text
     /// </remarks>
     public static class TokenFormatter
     {
+        #region Property Getter Cache
+
+        private static readonly ConcurrentDictionary<(Type Type, string PropertyName, bool NonPublic), MethodInfo?> _getterCache =
+            new ConcurrentDictionary<(Type, string, bool), MethodInfo?>();
+
+        private static readonly Func<(Type Type, string PropertyName, bool NonPublic), MethodInfo?> _getterFactory = key => {
+            var bindingFlags = BindingFlags.Instance | BindingFlags.Public;
+
+            if (key.NonPublic)
+                bindingFlags |= BindingFlags.NonPublic;
+
+            var property = key.Type.GetProperty(key.PropertyName, bindingFlags);
+            return property?.GetGetMethod(key.NonPublic);
+        };
+
+        #endregion
+
         /// <summary>
         /// Substitutes named tokens in the format string with values provided from a dictionary or an object.
         /// </summary>
@@ -141,15 +159,10 @@ namespace Singulink.Text
                     return false;
                 }
 
-                var bindingFlags = BindingFlags.Instance | BindingFlags.Public;
+                var getter = _getterCache.GetOrAdd((currentValue.GetType(), tokenKeyName, nonPublic), _getterFactory);
 
-                if (nonPublic)
-                    bindingFlags |= BindingFlags.NonPublic;
-
-                var property = currentValue.GetType().GetProperty(tokenKeyName, bindingFlags);
-
-                if (property?.CanRead == true) {
-                    value = property.GetValue(currentValue);
+                if (getter != null) {
+                    value = getter.Invoke(currentValue, null);
                     return true;
                 }
 
