@@ -32,7 +32,7 @@ Curly braces are escaped by doubling them up, so `"{{"` and `"}}"` are formatted
 `TokenOptions` has three available values:
 - `None` - the default value with no options set.
 - `NonPublicAccess` - Indicates non-public properties can be accessed from tokens.
-- `AllowMissingKeys` - Indicates that nullable keys that don't exist should be treated like `null` instead of throwing a `KeyNotFoundException` exception.
+- `AllowMissingKeys` - Indicates that nullable keys that don't exist should be treated like `null` instead of throwing `KeyNotFoundException`.
 
 # Examples
 
