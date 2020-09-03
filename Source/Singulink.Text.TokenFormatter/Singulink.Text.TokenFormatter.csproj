@@ -3,15 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Singulink.Text</RootNamespace>
-    <Description>A simple yet versatile .NET tokenized string formatting library written in C# to replace string.Format.</Description>
+    <Description>A simple yet versatile tokenized string formatting library that replaces string.Format.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>String Formatting Formatter Token</PackageTags>
+    <PackageTags>String Format Formatting Formatter Token</PackageTags>
     <PackageProjectUrl>https://github.com/Singulink/Singulink.Text.TokenFormatter</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Mike Marynowski</Authors>
-    <Company>Singulink</Company>
+    <Authors>Singulink</Authors>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Copyright>Copyright (c) 2020 Singulink</Copyright>
+    <Copyright>© Singulink. All rights reserved.</Copyright>
     <Version>1.0.2</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
