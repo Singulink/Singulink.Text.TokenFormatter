@@ -6,13 +6,24 @@
 
 TokenFormatter provides simple yet versatile tokenized string formatting, designed primarily for processing localized resource strings, exception messages and log data in a more friendly manner than brittle positional tokens in the `string.Format()` family of methods. This can be particularly useful when utilizing localized resource strings since your translaters will have much better context when they see values like `"{User.Name} performed {Action}"` instead of `"{0} performed {1}"`.
 
-# Installation
+### About Singulink
+
+*Shameless plug*: We are a small team of engineers and designers dedicated to building beautiful, functional and well-engineered software solutions. We offer very competitive rates as well as fixed-price contracts and welcome inquiries to discuss any custom development / project support needs you may have.
+
+This package is part of our **Singulink Libraries** collection. Visit https://github.com/Singulink to see our full list of publicly available libraries and other open-source projects.
+
+## Installation
 
 Simply install the `Singulink.Text.TokenFormatter` package from NuGet into your project.
 
-**Supported Runtimes**: Anywhere .NET Standard 2.0 is supported, including .NET Framework 4.6.1+ and .NET Core 2.0+.
+**Supported Runtimes**: Anywhere .NET Standard 2.0+ is supported, including:
+- .NET Core 2.0+
+- .NET Framework 4.6.1+
+- Mono 5.4+
+- Xamarin.iOS 10.14+
+- Xamarin.Android 8.0+
 
-# Usage
+## Usage
 
 The only two types exposed by the package are `TokenFormatter` and `TokenOptions`. `TokenFormatter` has the following two static methods that do it all:
 
@@ -34,7 +45,7 @@ Curly braces are escaped by doubling them up, so `"{{"` and `"}}"` are formatted
 - `NonPublicAccess` - Indicates non-public properties can be accessed from tokens.
 - `AllowMissingKeys` - Indicates that nullable keys that don't exist should be treated like `null` instead of throwing `KeyNotFoundException`.
 
-# Examples
+## Examples
 
 The following are some examples to demonstrate how TokenFormatter works:
 
