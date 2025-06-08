@@ -4,6 +4,9 @@
 [![View nuget packages](https://img.shields.io/nuget/v/Singulink.Text.TokenFormatter.svg)](https://www.nuget.org/packages/Singulink.Text.TokenFormatter/)
 [![Build and Test](https://github.com/Singulink/Singulink.Text.TokenFormatter/workflows/build%20and%20test/badge.svg)](https://github.com/Singulink/Singulink.Text.TokenFormatter/actions?query=workflow%3A%22build+and+test%22)
 
+> [!ERROR]
+> This library is now archived. Please consider using something like [SmartFormat](https://github.com/axuno/SmartFormat) instead :)
+
 TokenFormatter provides simple yet versatile tokenized string formatting, designed primarily for processing localized resource strings, exception messages and log data in a more friendly manner than brittle positional tokens in the `string.Format()` family of methods. This can be particularly useful when utilizing localized resource strings since your translaters will have much better context when they see values like `"{User.Name} performed {Action}"` instead of `"{0} performed {1}"`.
 
 ### About Singulink
